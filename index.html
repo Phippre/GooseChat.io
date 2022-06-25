@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/jquery.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Goose Project</title>
+    </head>
+    <body>
+
+        <p class="title">Goose Chat<br><p class="slogan">Come on in, the water's just fine.</p></p><br>
+        
+
+        <div class="center-login center-h center-v">
+            <input type="text" name="login" placeholder="Username"><br>
+            <input type="password" name="login" placeholder="Password" onkeydown="if (event.keyCode == 13) document.getElementById('loginButton').click()"><br>
+            <button onclick='location.href="./pages/home.html"' id="loginButton">Login</button><br>
+            <button onclick='location.href="./pages/createaccount.html"' id="signupButton">Create Account</button><br>
+            <a style="text-decoration: underline;">Forgot your password?</a><br><br><br>
+            <p>Version: 0.3a</p>
+        </div>
+    </body>
+</html>
