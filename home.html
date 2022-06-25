@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function activateTab(pageId) {
+            var tabCtrl = document.getElementById('tab-contents');
+            var pageToActivate = document.getElementById(pageId);
+            for (var i = 0; i < tabCtrl.childNodes.length; i++) {
+                var node = tabCtrl.childNodes[i];
+                if (node.nodeType == 1) {
+                    node.style.display = (node == pageToActivate) ? 'block' : 'none';
+                }
+            }
+        }
+    </script>
+    <title>The Goose Project</title>
+</head>
+
+<body>
+    <div class="convo-page">
+
+        <div id="sidebar">
+            <div class="tabs">
+                <a href="javascript:activateTab('chatTab')" class="tab1">- Ponds -</a>
+                <a href="javascript:activateTab('friendsTab')" class="tab2">- Flock -</a>
+            </div>
+
+            <div id="tab-contents">
+                <div id="chatTab" style="display: block;">
+                    <ul class="chats">
+                        <li class="convo">
+
+                        </li>
+                        <li class="convo">
+
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                        <li class="convo">
+    
+                        </li>
+                    </ul>
+                </div>
+                <div id="friendsTab" style="display: none;">
+                    <ul id="friends">
+                        <li id="friend">
+
+                        </li>
+                        <li id="friend">
+
+                        </li>
+                        <li id="friend">
+
+                        </li>
+                        <li id="friend">
+
+                        </li>
+                        <li id="friend">
+
+                        </li>
+                        <li id="friend">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="conversation-box">
+            <input type="text" class="message" placeholder="Compose Message...">
+        </div>
+    </div>
+
+</body>
+
+</html>
